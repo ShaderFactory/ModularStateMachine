@@ -1,0 +1,16 @@
+{
+    "name": "shaderfactory.modularstatemachine.samples",
+    "rootNamespace": "ModularStateMachine",
+    "references": [
+        "GUID:e570eaafb2d84e94789a87d9c804f906"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
