@@ -14,3 +14,16 @@ Modular State Machine is an unity package that offers functionality of a hierarc
 - Now you have a State Machine asset where you have a 'Initial State' field to drop a 'state (StateComposite)' to.
 ### How to create a state.
 - In Unity's project window, right-click in the folder where you want the state machine created. In the right-click menu go to **Create > Modular State Machine > Composite State**.
+
+## Classes (Scripts)
+| Name                      | Type               | Description                               |
+| ------------------------- | ------------------ | ----------------------------------------- |
+| StateMachineController    | Component          | Attach a State Machine to a GameObject    |
+| Transition                | Core Functionality | Scriptable Object that describes a state. |
+| ModularStateMachineEvents | Core Functionality | Manages state machine events.             |
+| StateActionSO             | Scriptable Object  | Executes state-specific actions.          |
+| DecisionSO                | Scriptable Object  | Checks conditions for transitions.        |
+| StateMachineDataSO        | Scriptable Object  | Stores state machine configuration.       |
+| StateSO                   | Scriptable Object  | Base state with lifecycle behaviors.      |
+| CompositeSO               | Scriptable Object  | Composite state with sub-machine support. |
+*Work in progress*
