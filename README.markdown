@@ -1,4 +1,4 @@
-Modular State Machine is an unity package that offers functionality of a hierarchical finite state. It's ScriptableObject-based for easy implementation and modular reusability.
+Modular State Machine is an Unity package that offers functionality of a hierarchical finite state. It's ScriptableObject-based for easy implementation and modular reusability.
 
 ## How to install
 - In Unity, go to **Windows > Package Management > Package Manager.**
