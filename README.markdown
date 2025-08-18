@@ -26,4 +26,5 @@ Modular State Machine is an unity package that offers functionality of a hierarc
 | StateMachineDataSO        | Scriptable Object  | Stores state machine configuration.       |
 | StateSO                   | Scriptable Object  | Base state with lifecycle behaviors.      |
 | CompositeSO               | Scriptable Object  | Composite state with sub-machine support. |
+
 *Work in progress*
