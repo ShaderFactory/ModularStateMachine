@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ab6c3d574636ce48a5a43b26d9d6b13, type: 3}
-  m_Name: MyStateMachine
+  m_Name: OutsideGameStateMachine
   m_EditorClassIdentifier: 
-  initialState: {fileID: 11400000, guid: 81edf3800c86a4040908aaeb6ffb74c1, type: 2}
+  initialState: {fileID: 11400000, guid: 13a9630d4d6c5ef46955077a27789c6e, type: 2}

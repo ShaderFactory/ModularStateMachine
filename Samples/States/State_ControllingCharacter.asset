@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b94aeb37fec3c74392f9a699d136736, type: 3}
-  m_Name: MyState_First
+  m_Name: State_ControllingCharacter
   m_EditorClassIdentifier: 
-  enterActions:
-  - {fileID: 11400000, guid: f46ae1b1c47501d41bde8c6cc9248b4d, type: 2}
+  enterActions: []
   updateActions: []
-  exitActions:
-  - {fileID: 11400000, guid: 2b9ea1ea52bce2b4a8eae4e5f7bc3d3a, type: 2}
-  transitions:
-  - decision: {fileID: 11400000, guid: 29f0417f5739ac247a8eeed01be16060, type: 2}
-    targetState: {fileID: 11400000, guid: 1b5204f5aacfda34990e2b36b08515b1, type: 2}
+  exitActions: []
+  transitions: []
   subMachine: {fileID: 0}

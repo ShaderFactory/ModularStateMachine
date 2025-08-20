@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eea81795edf1934eab5cc2572c5cd30, type: 3}
-  m_Name: Myaction_DebugLog_ExitLog
+  m_Script: {fileID: 11500000, guid: d2ff4762d3178074abb7d01ef65db13c, type: 3}
+  m_Name: Condition_PressSpacebar
   m_EditorClassIdentifier: 
-  stateActionName: Exit Log
-  message: Exiting!
+  keycode: 32

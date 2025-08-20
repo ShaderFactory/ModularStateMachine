@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace ModularStateMachine
 {
-    [CreateAssetMenu(menuName = "MyStateMachine/CompositeState")]
-    public class CompositeStateSO : StateSO
+    [CreateAssetMenu(menuName = "Shader Factory/Modular State Machine/State")]
+    public class StateSO : StateBaseSO
     {
         // Optional: Add overrides if you need parent-specific behavior before/after sub-machine
     }

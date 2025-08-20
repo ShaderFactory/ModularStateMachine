@@ -5,7 +5,7 @@ namespace ModularStateMachine
 {
     public class StateMachineController : MonoBehaviour
     {
-        [SerializeField] private StateMachineDataSO rootMachine;
+        [SerializeField] private StateMachineSO rootMachine;
 
         private StateSO currentState;
         private Stack<StateSO> stateStack = new Stack<StateSO>(); // For hierarchy depth
@@ -23,6 +23,7 @@ namespace ModularStateMachine
             if (currentState != null)
             {
                 currentState.Tick(this);
+
                 var nextState = currentState.CheckTransitions(this);
                 if (nextState != null)
                 {
@@ -33,7 +34,11 @@ namespace ModularStateMachine
 
         public void ChangeState(StateSO newState)
         {
-            if (currentState != null) currentState.Exit(this);
+            if (currentState != null)
+            { 
+                currentState.Exit(this);
+            } 
+            
             currentState = newState;
             currentState.Enter(this);
         }
@@ -42,15 +47,15 @@ namespace ModularStateMachine
         public void PushSubState(StateSO subState)
         {
             stateStack.Push(currentState);
-            ChangeState(subState); // Now current is the sub-state
+            currentState = subState;  // GPT 5 -  don’t call ChangeState again
+            currentState.Enter(this);
         }
 
         public void PopSubState()
         {
+            currentState.Exit(this);
             if (stateStack.Count > 0)
-            {
-                ChangeState(stateStack.Pop()); // Return to parent
-            }
+                currentState = stateStack.Pop();
         }
 
         // Expose data for actions/decisions, e.g., public Rigidbody rb; public Transform target;

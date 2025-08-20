@@ -3,22 +3,22 @@ using UnityEngine;
 
 namespace ModularStateMachine
 {
-    public abstract class StateSO : ScriptableObject
+    public abstract class StateBaseSO : ScriptableObject
     {
-        [SerializeField] protected List<StateActionSO> enterActions = new List<StateActionSO>();
-        [SerializeField] protected List<StateActionSO> updateActions = new List<StateActionSO>();
-        [SerializeField] protected List<StateActionSO> exitActions = new List<StateActionSO>();
-        [SerializeField] protected List<Transition> transitions = new List<Transition>();
+        [SerializeField] protected List<StateActionSO> enterActions = new();
+        [SerializeField] protected List<StateActionSO> updateActions = new();
+        [SerializeField] protected List<StateActionSO> exitActions = new();
+        [SerializeField] protected List<Transition> transitions = new();
 
         [Header("Hierarchy (Optional)")]
-        [SerializeField] protected StateMachineDataSO subMachine; // If set, this is hierarchical
+        [SerializeField] protected StateMachineSO subMachine; // If set, this is hierarchical
 
         public virtual void Enter(StateMachineController controller)
         {
             foreach (var action in enterActions) action.Execute(controller);
-            if (subMachine != null)
+
+            if (subMachine != null && subMachine.initialState != null)
             {
-                // For hierarchy: Push sub-initial state to stack (handled in controller)
                 controller.PushSubState(subMachine.initialState);
             }
         }
@@ -42,7 +42,7 @@ namespace ModularStateMachine
         {
             foreach (var transition in transitions)
             {
-                if (transition.decision.Decide(controller))
+                if (transition.condition.Decide(controller))
                 {
                     return transition.targetState;
                 }
