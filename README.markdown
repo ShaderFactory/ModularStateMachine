@@ -20,6 +20,8 @@ com.shaderfactory.modularstatemachine
 ### How to create a state.
 - In Unity's project window, right-click in the folder where you want the state machine created. In the right-click menu go to **Create > Modular State Machine > Composite State**.
 
+![Image showing the different types of assets that you have access with this package.](https://quietfalls.net/wp-content/uploads/2025/08/modularstatemachine_data-examples.jpg)
+
 ## Classes (Scripts)
 | Name                      | Type               | Description                               |
 | ------------------------- | ------------------ | ----------------------------------------- |
