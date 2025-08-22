@@ -21,7 +21,8 @@ com.shaderfactory.modularstatemachine
 - In Unity's project window, right-click in the folder where you want the state machine created. In the right-click menu go to **Create > Modular State Machine > Composite State**.
 
 ## Components
-=======
+![Image showing the different types of assets that you have access with this package.](https://quietfalls.net/wp-content/uploads/2025/08/modularstatemachine_data-examples.jpg)
+
 ## How to install
 - In Unity, go to **Windows > Package Management > Package Manager.**
 - In the Package Manager window, click the '+' (Plus) icon in to top-left corner and choose the 'Install package from git URL...'
