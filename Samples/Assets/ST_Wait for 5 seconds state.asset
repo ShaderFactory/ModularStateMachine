@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003c995ee4f962443a40ed4a42f6b5d3, type: 3}
+  m_Name: ST_Wait for 5 seconds state
+  m_EditorClassIdentifier: 
+  enterActions:
+  - {fileID: 11400000, guid: 5a4f6eeb7eadecf4abcff007e524cc7f, type: 2}
+  updateActions:
+  - {fileID: 11400000, guid: 98e3dbea261c41a4b89da43644ef636c, type: 2}
+  exitActions: []
+  transitions:
+  - condition: {fileID: 11400000, guid: df5f8a38581d0ab458cdb76c7d5ebe36, type: 2}
+    targetState: {fileID: 11400000, guid: f68688671e1bdd04f8e6330561bf6567, type: 2}
+  subMachine: {fileID: 0}
