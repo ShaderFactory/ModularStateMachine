@@ -43,18 +43,9 @@ com.shaderfactory.modularstatemachine
 | StateMachineController    | Component          | Attach a State Machine to a GameObject    |
 | Transition                | Core Functionality | Scriptable Object that describes a state. |
 | ModularStateMachineEvents | Core Functionality | Manages state machine events.             |
-<<<<<<< HEAD
 | StateSO                   | Scriptable Object  | Base class for states                     |
 | DecisionSO                | Scriptable Object  | Checks conditions for transitions.        |
 | StateMachineDataSO        | Scriptable Object  | Stores state machine configuration.       |
 | StateSO                   | Scriptable Object  | Base state with lifecycle behaviors.      |
-
-*Work in progress*
-=======
-| StateActionSO             | Scriptable Object  | Executes state-specific actions.          |
-| DecisionSO                | Scriptable Object  | Checks conditions for transitions.        |
-| StateMachineDataSO        | Scriptable Object  | Stores state machine configuration.       |
-| StateSO                   | Scriptable Object  | Base state with lifecycle behaviors.      |
-| CompositeSO               | Scriptable Object  | Composite state with sub-machine support. |
 
 *Work in progress*
