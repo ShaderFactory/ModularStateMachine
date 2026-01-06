@@ -1,5 +1,7 @@
 Modular State Machine is an Unity package that offers functionality of a hierarchical finite state. It's ScriptableObject-based for easy implementation and modular reusability.
 
+![Image showing the different types of assets that you have access with this package.](https://quietfalls.net/wp-content/uploads/2025/08/modularstatemachine_data-examples.jpg)
+
 ## Package name
 com.shaderfactory.modularstatemachine
 
@@ -19,8 +21,6 @@ com.shaderfactory.modularstatemachine
 
 ### How to create a state.
 - In Unity's project window, right-click in the folder where you want the state machine created. In the right-click menu go to **Create > Modular State Machine > Composite State**.
-
-![Image showing the different types of assets that you have access with this package.](https://quietfalls.net/wp-content/uploads/2025/08/modularstatemachine_data-examples.jpg)
 
 ## Classes (Scripts)
 | Name                      | Type               | Description                               |
