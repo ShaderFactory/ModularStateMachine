@@ -15,11 +15,11 @@ com.shaderfactory.modularstatemachine
 - Select the GameObject you want to add the state machine to, click 'Add Component' and search for 'State Machine Controller'.
 - Drag and drop your state machine (State Machine data SO) to the 'Root Machine'
 
-### 📝 How to create the state machine.
+### How to create the state machine.
 - In Unity's project window, right-click in the folder where you want the state machine created. In the right-click menu go to **Create > Modular State Machine > State Machine**.
 - Now you have a State Machine asset where you have a 'Initial State' field to drop a 'state (StateComposite)' to.
 
-### 📝 How to create a state.
+### How to create a state.
 - In Unity's project window, right-click in the folder where you want the state machine created. In the right-click menu go to **Create > Modular State Machine > Composite State**.
 
 ## Classes (Scripts)
